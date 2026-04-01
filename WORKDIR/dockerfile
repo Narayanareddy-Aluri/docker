@@ -1,0 +1,4 @@
+FROM almalinux:9
+RUN mkdir /reddy
+WORKDIR /reddy
+RUN touch test.txt
