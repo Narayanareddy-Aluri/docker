@@ -1,0 +1,7 @@
+FROM almalinux:9
+RUN dnf install nginx -y
+ENV APP_NAME="prod"
+EXPOSE 8080
+LABEL author="reddy"\
+      version="2.0"
+CMD ["nginx","-g","daemon off;"]
