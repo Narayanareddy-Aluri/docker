@@ -1,5 +1,5 @@
 FROM almalinux:9
 RUN dnf install nginx -y
-LABEL author= "bunty" \
-      version = "2.0"
+LABEL author="reddy"\
+      version="2.0"
 CMD ["nginx","-g","daemon off;"]
